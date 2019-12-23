@@ -15,10 +15,12 @@ class NewsListViewCell: UICollectionViewCell {
     static let edgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     static let minimunContentLabelHeight: CGFloat = 70
     static let mainStackViewSpacing: CGFloat = 15
+    static let imageSize = CGSize(width: 70, height: 70)
     static let contentWidth: CGFloat = UIScreen.main.bounds.width
         - edgeInsets.left
         - edgeInsets.right
         - mainStackViewSpacing
+        - imageSize.width
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
