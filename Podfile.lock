@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (4.9.1)
+  - FPSCounter (4.0.1)
+  - Kingfisher (5.7.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Realm (3.21.0):
+    - Realm/Headers (= 3.21.0)
+  - Realm/Headers (3.21.0)
+  - RealmSwift (3.21.0):
+    - Realm (= 3.21.0)
+  - Result (4.1.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxRealm (0.7.6):
+    - RealmSwift (~> 3.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.5.0)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - FPSCounter (~> 4.0)
+  - Kingfisher (= 5.7.1)
+  - Moya/RxSwift
+  - Realm (~> 3.15)
+  - RealmSwift (~> 3.15)
+  - RxCocoa (= 4.5.0)
+  - RxRealm (= 0.7.6)
+  - SnapKit (= 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FPSCounter
+    - Kingfisher
+    - Moya
+    - Realm
+    - RealmSwift
+    - Result
+    - RxCocoa
+    - RxRealm
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FPSCounter: 262ec30f9f5a2fd7843b593ea80016fece7c809c
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Realm: 38e9dcb19104b58407167d99f70d4995f7c16023
+  RealmSwift: 3183cc1ad48378fbcd634311b22c0e6c44021152
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxRealm: 5379eddd74f8d617ca7681d1f8d144af25b432b0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: f92827dc8d4f060441124e4947b60595f9a96318
+
+COCOAPODS: 1.8.4
