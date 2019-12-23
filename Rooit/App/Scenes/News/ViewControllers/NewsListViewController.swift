@@ -103,7 +103,9 @@ extension NewsListViewController: UICollectionViewDataSource {
 
 extension NewsListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: NewsListViewCell.cellHeight)
+        let outputs = viewModel.ouputs
+        let cellModel = outputs.cellModels[indexPath.row]
+        return CGSize(width: collectionView.frame.width, height: cellModel.cellHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

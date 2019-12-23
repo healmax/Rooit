@@ -26,6 +26,7 @@
 		0761280B23B0B0B1002DF29B /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0761280A23B0B0B1002DF29B /* RealmRepresentable.swift */; };
 		0761280D23B0B0DF002DF29B /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0761280C23B0B0DF002DF29B /* DomainConvertibleType.swift */; };
 		0761281023B0B59C002DF29B /* RMArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0761280F23B0B59C002DF29B /* RMArticle.swift */; };
+		0783362323B0D0A7002F75DB /* String+Recr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783362223B0D0A7002F75DB /* String+Recr.swift */; };
 		EC829EDB5F56D99A621D97D7 /* Pods_Rooit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C6B4759930969F780C167C /* Pods_Rooit.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		0761280A23B0B0B1002DF29B /* RealmRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
 		0761280C23B0B0DF002DF29B /* DomainConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
 		0761280F23B0B59C002DF29B /* RMArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMArticle.swift; sourceTree = "<group>"; };
+		0783362223B0D0A7002F75DB /* String+Recr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Recr.swift"; sourceTree = "<group>"; };
 		38C6B4759930969F780C167C /* Pods_Rooit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rooit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8E2E2B6424A98E4B3CF353 /* Pods-Rooit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rooit.release.xcconfig"; path = "Target Support Files/Pods-Rooit/Pods-Rooit.release.xcconfig"; sourceTree = "<group>"; };
 		A28AA1FDBE518A3724824407 /* Pods-Rooit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rooit.debug.xcconfig"; path = "Target Support Files/Pods-Rooit/Pods-Rooit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		076127DE23B08F0A002DF29B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				0783362123B0D094002F75DB /* Extension */,
 				076127EB23B093F9002DF29B /* Scenes */,
 				076127EA23B093F1002DF29B /* Service */,
 				076127CA23B08C5B002DF29B /* AppDelegate.swift */,
@@ -273,6 +276,14 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		0783362123B0D094002F75DB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0783362223B0D0A7002F75DB /* String+Recr.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		90A43218FFE3208B06B50124 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +427,7 @@
 				076127EF23B0942F002DF29B /* NewsListViewController.swift in Sources */,
 				076127F323B09553002DF29B /* NewsListViewCell.swift in Sources */,
 				076127FA23B098AA002DF29B /* NewsListViewModel.swift in Sources */,
+				0783362323B0D0A7002F75DB /* String+Recr.swift in Sources */,
 				0761280023B0A66C002DF29B /* Kingfisher+Rx.swift in Sources */,
 				0761281023B0B59C002DF29B /* RMArticle.swift in Sources */,
 				0761280B23B0B0B1002DF29B /* RealmRepresentable.swift in Sources */,

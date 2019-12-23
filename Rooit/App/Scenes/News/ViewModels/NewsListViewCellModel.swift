@@ -15,6 +15,7 @@ protocol NewsListViewCellModelInput {
 
 protocol NewsListViewCellModelOutput {
     var articleDriver: Driver<Article> { get }
+    var cellHeight: CGFloat { get }
 }
 
 protocol NewsListViewCellModelType: NewsListViewCellModelInput, NewsListViewCellModelOutput {
@@ -29,6 +30,7 @@ class NewsListViewCellModel: NewsListViewCellModelType, NewsListViewCellModelInp
     
     // MAKR: Outputs
     var articleDriver: Driver<Article>
+    var cellHeight: CGFloat
     
     // MARK: Private
     var articleBehavior: BehaviorRelay<Article>!
@@ -36,5 +38,15 @@ class NewsListViewCellModel: NewsListViewCellModelType, NewsListViewCellModelInp
     init(article: Article) {
         articleBehavior = BehaviorRelay<Article>(value: article)
         articleDriver = articleBehavior.asDriver()
+        
+        let contentHeight = article.title?.height(withConstrainedWidth: NewsListViewCell.contentWidth, font: UIFont.systemFont(ofSize: 17)) ?? 0
+        
+        let realContentHeught = contentHeight < NewsListViewCell.minimunContentLabelHeight
+            ? NewsListViewCell.minimunContentLabelHeight
+            : contentHeight
+        
+        cellHeight = realContentHeught
+            + NewsListViewCell.edgeInsets.top
+            + NewsListViewCell.edgeInsets.bottom
     }
 }
